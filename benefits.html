@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+      /* h1{
+            padding: 90px 0px 20px 40px;
+            font-size: 2.5rem;
+            font-weight: lighter;
+            letter-spacing: 3px;
+        }
+        main{
+            background-color: antiquewhite;
+            letter-spacing: 1px;
+            font-size: 20px;
+            color:black;
+        }
+        pre{
+            font-weight: normal;
+            overflow: auto;
+        }
+        a:hover {
+            background-color: rgb(165, 164, 164);
+        }*/
+        main{
+            padding-top: 20px;
+            padding-left: 28px;
+            color:black;
+        }
+        .container button{
+                margin-top: -40px;
+                margin-left: 50px;
+                background-color: rgb(207, 207, 207);
+                color: black;
+                border-radius: 20px;
+                width: 100px;
+                height: 50px;
+                font-family: sans-serif;
+                cursor: pointer;
+        }
+        .container a{
+            display: block;
+        }
+        .container button:hover{
+            color: rgb(215, 134, 12);
+        }
+        .cent {
+            height: 450px;
+            max-width: 1200px;
+            position: relative;
+            background-color: #cecdcd67;
+        }
+        .cent p{
+            color:rgb(105, 105, 105)
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form style="padding-bottom: 90px;">
+            <input type="button" value="RETURN" onclick="history.go(-1)" size = "20px">
+        </form>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+            </script>
+		
+
+<!-- Slideshow container -->
+            
+            <div class="cent" style="margin-left: 140px; margin-top: 20px;">
+                
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade" style="display: block;">
+                <br>
+                <h3 style="padding-top: 30px; text-align: center; font-size: 2rem; font-weight: bold;">5 BENEFITS OF BIODIVERSITY</h3>
+                <pre class="smalltext" style=  "margin-left: -145px; margin-top: 100px; font-size: 1.7rem; text-align: justify;">
+                    Biodiversity ensures that living things are able to thrive here on Earth. Biodiversity 
+                    loss is more than just the extinction of rare species, an idea that may sound remote
+                    and so removed from our everyday lives. What many do not realise is that it directly affects 
+                    humans as well. Loss of biodiversity disrupts the essential mechanisms needed for food 
+                    production, health maintenance, and climate regulation.</pre>
+                </div>
+            
+            
+                <div class="mySlides fade">
+                    <img src="plant.png" style="float: right; height: 450px; width: 550px">
+                    <p class="text1">IMAGE</p>
+                    <br>
+                <h3 style="margin-top: 5px;">Disease Resistance</h3>
+                <pre class="smalltext" style=  "margin-left: -140px; margin-top: 35px; text-align: justify; font-size: 1.2rem;">
+                    Genetically diverse populations have better chances of surviving a 
+                    catastrophe like a pandemic. Diverse populations carry genetic codes
+                    that make certain members of their group less vulnerable. When those 
+                    carrying these genetic codes reproduce, disease resistance is passed
+                    along and the species’ survival is ensured.</pre>
+                </div>
+  
+                <div class="mySlides fade">
+                    <img src="carbon.jpg" style="float: right; height: 450px; width: 550px">
+                    <p class="text1">IMAGE</p>
+                    <br>
+                <h3 style="margin-top: 5px;">Carbon Sequestration</h3>
+                <pre class="smalltext" style=  "margin-left: -140px; margin-top: 35px; text-align: justify; font-size: 1.2rem;">
+                    Plants are essential for medicines. For example, 25% of drugs used in
+                    modern medicine are derived from rainforest plants while 70% of cancer
+                    drugs are natural or synthetic products inspired by nature. This means 
+                    that every time a species goes extinct, we miss out on a potential new
+                    medicine. </pre>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="storm.jpg" style="float: right; height: 450px; width: 550px">
+                    <p class="text1">IMAGE</p>
+                    <br>
+                <h3 style="margin-top: 5px;">Storm, Flooding, and Coastal Erosion</h3>
+                <pre class="smalltext" style=  "margin-left: -140px; margin-top: 35px; text-align: justify; font-size: 1.2rem;">
+                    Coastal sea levels are rising and the World Economic Forum says 
+                    that as many as 410 million people could be affected by the end of 
+                    the century. While 59% of sea level rise is expected to be in tropical 
+                    Asia, countries such as China, France, Senegal, Nigeria, and the United
+                    States are also at risk. Restoration and protection of coastal ecosystems 
+                    such as salt marshes and mudflats will be an important aspect of flood 
+                    prevention for low-lying coastal communities. Saltmarsh plants and 
+                    microbes stabilise and bind soil together. Coupled with greater root 
+                    biomass, these ecosystems can provide better resistance to soil erosion. </pre>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="food.jpg" style="float: right; height: 450px; width: 550px">
+                    <p class="text1">IMAGE</p>
+                    <br>
+                <h3 style="margin-top: 5px;">Food Security</h3>
+                <pre class="smalltext" style=  "margin-left: -140px; margin-top: 35px; text-align: justify; font-size: 1.2rem;">
+                    Our food system and agriculture are strongly linked to biodiversity. 
+                    Millions of species work together to supply us with a variety of grains,
+                    vegetables, fruits, and animal products. Food production relies on many 
+                    “services” that biodiversity provides. This includes pollination, 
+                    maintenance of soil fertility, resistance to pests and diseases, climate
+                    maintenance, and water filtration.</pre>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="happiness.jpg" style="float: right; height: 450px; width: 550px">
+                    <p class="text1">IMAGE</p>
+                    <br>
+                <h3 style="margin-top: 5px;">Overall Health and Happiness</h3>
+                <pre class="smalltext" style=  "margin-left: -140px; margin-top: 35px; text-align: justify; font-size: 1.2rem;">
+                    Whether it is strolling in a park in the city, going to the mountains, or 
+                    swimming in the sea, being in contact with nature has a host of benefits 
+                    for humans. Exposure to green and blue spaces outdoors improves our 
+                    working memory, attention control, and cognitive flexibility. Researchers
+                    also found that aside from cognitive improvements, contact with nature is 
+                    associated with increased positive social interactions, happiness, having
+                    a sense of meaning in life, as well as decreases in mental stress. </pre>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->  
+            <div style="text-align:center; padding-bottom: 40px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+    </main>
+    <!--<main>
+
+
+        <pre>
+        <h2 style="margin-left: 40px; font-size: 2.0rem; font-weight: lighter;">5. Overall Health and Happiness</h2>       
+    Whether it is strolling in a park in the city, going to
+    the mountains, or swimming in the sea, being in contact 
+    with nature has a host of benefits for humans. Exposure
+    to green and blue spaces outdoors improves our working memory,
+    attention control, and cognitive flexibility. Researchers
+    also found that aside from cognitive improvements, contact 
+    with nature is associated with increased positive social 
+    interactions, happiness, having a sense of meaning in life, 
+    as well as decreases in mental stress. 
+        </pre>
+        <img src="happiness.jpg" style=" margin-top: -300px; margin-bottom: 50px; height: 300px; width: 480px; margin-left: 800px; border-radius: 10px;">
+        <a href="about.html" style="color: black; padding:15px 20px; position:center; border-radius: 20px;">Return</a>
+   </main>-->
+</body>
